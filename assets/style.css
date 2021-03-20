@@ -1,28 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
 
 
 
-
-header {
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 33%, rgba(5,5,5,1) 64%, rgba(13,13,13,1) 88%, rgba(32,32,32,1) 100%);
+.header {
+    background: rgb(33,33,33);
+    background: radial-gradient(circle, rgba(33,33,33,1) 64%, rgba(0,0,0,1) 100%);
     color: white;
     padding: 40px;
     text-decoration: none;
 }
 
-header h1 {
+.header h1 {
     float: left;
-    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 40px;
+    padding: -20px;
+    position: relative;
+    bottom: 20px;
 
 }
 
-header ul li {
+.header ul li {
     float: right;
     display: inline-block;
     padding: 20px;
-    
-    
+    position: relative;
+    bottom: 20px;
+
 }
+
+
 
 .banner {
     background-image: url(../assets/Images/darkheader.jpg);
@@ -33,3 +45,54 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.aboutme {
+  
+}
+
+
+
+.aboutme h2 {
+    padding: 20px;
+    font-size: 36px;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    border-right: thin   solid;
+    height: 140px;
+
+
+}
+
+.aboutme p {
+    float: right;
+    padding: -20px;
+    position: relative;
+    width: 70%;
+    bottom: 140px;
+    
+}
+
+div.work {
+    position:relative
+}
+
+div.work h2 {
+    padding: 20px;
+    font-size: 36px;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    border-right: thin   solid;
+    height: 140px;
+}
+
+div.work p {
+    float: right;
+    padding: -20px;
+    position: relative;
+    width: 70%;
+    bottom: 140px;
+
+}
+
