@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
     
 }
 
@@ -47,7 +48,7 @@ a {
 }
 
 .aboutme {
-  
+    display: flex;
 }
 
 
@@ -59,7 +60,7 @@ a {
     margin-top: 20px;
     position: relative;
     border-right: thin   solid;
-    height: 140px;
+    height: 180px;
 
 
 }
@@ -69,12 +70,15 @@ a {
     padding: -20px;
     position: relative;
     width: 70%;
-    bottom: 140px;
+    margin-top: auto;
+    margin-left: auto;
     
 }
 
 div.work {
-    position:relative
+    position:relative;
+    display: flex;
+    padding-top: 100px;
 }
 
 div.work h2 {
@@ -84,15 +88,50 @@ div.work h2 {
     margin-top: 20px;
     position: relative;
     border-right: thin   solid;
-    height: 400px;
+    height: 800px;
 }
 
-div.work p {
-    float: right;
-    padding: -20px;
-    position: relative;
+.container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
     width: 70%;
-    bottom: 140px;
+    flex-direction: column;
+
+}
+
+.container > div {
+    background-size: cover;
+    flex-direction: column;
+
+}
+
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: url('./Images/wave.jpg');
+    grid-row: 1 /4;
+}
+
+.img2 {
+    background:url('./Images/ledwall.jpg');
+
+}
+
+.img3 {
+    background: url('./Images/calculator.jpg');
+
+}
+
+.img4 {
+    background: url('./Images/puzzle.jpg');
+
+}
+
+.img5 {
+    background: url('./Images/runner.jpg');
 
 }
 
