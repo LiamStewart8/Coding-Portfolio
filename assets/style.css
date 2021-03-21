@@ -84,7 +84,7 @@ div.work h2 {
     margin-top: 20px;
     position: relative;
     border-right: thin   solid;
-    height: 140px;
+    height: 400px;
 }
 
 div.work p {
@@ -96,3 +96,21 @@ div.work p {
 
 }
 
+.contactme {
+
+
+}
+
+.contactme h3 {
+    padding: 20px;
+    width: 25%;
+    margin-top: 20px;
+    position: relative;
+    border-right: thin   solid;
+
+}
+
+.contactme ul li {
+   
+
+}
