@@ -43,7 +43,7 @@ body {
 
 .header ul li:hover {
     opacity: 0.7;
-    
+
 
 }
 
@@ -65,7 +65,6 @@ a {
 }
 
 
-
 .aboutme h2 {
     padding: 20px;
     font-size: 36px;
@@ -74,18 +73,26 @@ a {
     position: relative;
     border-right: thin   solid;
     height: 180px;
+}
+
+.myportrait {
+    background-image: url("./Images/aboutme.jpg");
+    background-size: 150px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 20px;
 
 
 }
-
 .aboutme p {
     float: right;
     padding: -20px;
     position: relative;
     width: 70%;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    padding: 20px;
     
 }
 
@@ -124,32 +131,33 @@ div.work h2 {
     flex-direction: column;
     justify-content: flex-end;  
     cursor: pointer;
+    padding-bottom: 20px;
     
 
 }
 
 .container > div:hover {
-    opacity: 0.7;
-    transform: scale(0.99);
+    opacity: 0.8;
+    
     
 }
 
 .container h3 {
-    color: black;
-    background-color: white;
+    color:black;
+    background-color:white;
     margin-right: 75%;
-    display: inline-block;
-    white-space: nowrap;
-
-
+    display: flex;
+   
 }
 
 .container p {
-    color: black;
-    background-color: white;
+    color:black;
+    background-color:white;
     margin-right: 75%;
-    white-space: nowrap;   
+    display: flex;
+    font-weight: 300;
 }
+
 
 .img1 {
     grid-column-start: 1;
@@ -198,6 +206,131 @@ div.work h2 {
 }
 
 .contactme ul li {
-   
+    float: right;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    bottom: 50px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+}
 
+.contactme ul li:hover {
+    opacity: 0.7
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .header h1 {
+        float: none;
+        display: inline-block;
+        font-size: 40px;
+        padding: -20px;
+        position: relative;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }      
+    
+    .header ul li {
+        float: none;
+        display: inline;
+        padding: 40px;
+        position: relative;
+        bottom: 0px;
+        flex-wrap: none;
+        text-align: center;
+        
+    }  
+    
+    
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme h2 {
+        font-size: 36px;
+        border:none;
+        height: 100px;
+        text-align: center;
+        width: 100%;
+    }
+    .myportrait {
+        background-image: url("./Images/aboutme.jpg");
+        background-size: 150px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+
+     }
+
+    .aboutme p {
+        float: right;
+        padding: -20px;
+        position: relative;
+        width: 100%;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    div.work {
+        position:relative;
+        display: flex;
+        padding-top: 100px;
+        color: white;
+        flex-direction: column;
+        text-align: center;
+        
+    
+    }
+    div.work h2 {
+        padding: 20px;
+        font-size: 36px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+        height: 100px;
+    }
+
+    .container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        width: 100%;
+        flex-direction: column;
+    
+}
+
+    .contactme h3 {
+        padding: 20px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        border-right: none;
+        text-align: center;
+        flex-direction: column;
+}
+
+    .contactme ul li {
+        float: none;
+        display: inline-block;
+        padding: 40px;
+        position: relative;
+        bottom: 0px;
+        flex-wrap: none;
+        text-align: center;
 }
