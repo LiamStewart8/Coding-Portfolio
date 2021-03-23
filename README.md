@@ -1,7 +1,7 @@
 # Coding-Portfolio
 
 ## Site Picture
-![Image](MyPortfolio.png)
+![Image](./assets/images/myportfolio.png)
 
 ## Technologies Used    
     - HTML - Used to create elements on the DOM
@@ -15,7 +15,8 @@
 
 ## Code Snippet
     Here is a snippit from my html where I did the grid layout for my projects.
-    ```html 
+    
+```html 
 <div id="work" class="work">
         <h2>Work</h2>
         <div class="container">
@@ -41,7 +42,7 @@
             </div>
         </div>
 </div>
-    ```
+```
 
 ## Author Links
 [LinkedIn](https://www.linkedin.com/in/liamsctewart/)<br>
