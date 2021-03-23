@@ -207,8 +207,8 @@ div.work h2 {
 
 .contactme ul li {
     float: right;
-    display: flex;
-    padding: 20px;
+    display: inline-block;
+    padding: 40px;
     position: relative;
     bottom: 50px;
     flex-wrap: wrap;
@@ -258,16 +258,17 @@ div.work h2 {
         text-align: center;
         width: 100%;
     }
+
     .myportrait {
-        background-image: url("./Images/aboutme.jpg");
-        background-size: 150px;
+        background-size: 200px;
         width: 200px;
         height: 200px;
-        background-repeat: no-repeat;
-        display: flex;
-        padding: 20px;
-        align-items: center;
-        text-align: center;
+        display: inline-block;
+        padding: 0px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
 
      }
 
